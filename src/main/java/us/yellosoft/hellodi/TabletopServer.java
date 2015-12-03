@@ -22,5 +22,7 @@ public final class TabletopServer {
     TabletopGameEngine tabletopGameEngine = context.getBean(TabletopGameEngine.class);
     int goblin = tabletopGameEngine.createCharacter();
     System.out.println("Goblin: " + goblin);
+
+    context.close();
   }
 }
