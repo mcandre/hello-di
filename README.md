@@ -74,3 +74,15 @@ public class TabletopGameEngine {
 ```
 
 This allows a dependency injection container, such as Spring, to entirely manage the wiring of RNG implementations to the `rng` attribute, without requiring direct users of TabletopGameEngine to worry about passing around references to RNG implementations.
+
+# REQUIREMENTS
+
+* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.7+
+* [Gradle](http://gradle.org/) 2.1+
+
+## Optional
+
+* [Sonar](http://www.sonarqube.org/)
+* [Infer](http://fbinfer.com/)
+
+E.g., `brew install gradle sonar sonar-runner infer`
