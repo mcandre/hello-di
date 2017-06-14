@@ -3,15 +3,15 @@ package us.yellosoft.hellodi;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
-   An example bootstrap of a Dependency Injected game engine
+ * An example bootstrap of a Dependency Injected game engine
  */
 public final class TabletopServer {
   /** Utility class */
   private TabletopServer() {}
 
   /**
-     CLI entry point
-     @param args CLI flags
+   * CLI entry point
+   * @param args CLI flags
    */
   public static void main(final String[] args) {
     AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();

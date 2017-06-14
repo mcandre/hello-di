@@ -84,3 +84,5 @@ This allows a dependency injection container, such as Spring, to entirely manage
 
 * [Sonar](http://www.sonarqube.org/)
 * [Infer](http://fbinfer.com/)
+* [editorconfig-cli](https://github.com/amyboyd/editorconfig-cli) (e.g. `go get github.com/amyboyd/editorconfig-cli`)
+* [flcl](https://github.com/mcandre/flcl) (e.g. `go get github.com/mcandre/flcl/...`)
