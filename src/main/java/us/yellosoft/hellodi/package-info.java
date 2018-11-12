@@ -1,4 +1,4 @@
 /**
- * Dependency Injection example
- */
+* Dependency Injection example
+*/
 package us.yellosoft.hellodi;
