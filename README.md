@@ -2,7 +2,7 @@
 
 # EXAMPLE
 
-```
+```console
 $ gradle shadowJar
 $ bin/tabletop-server
 Nov 03, 2015 11:36:04 AM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
@@ -18,7 +18,7 @@ Dependency Injection is a convention of avoiding hardcoding specific implementat
 
 Bad (hardcoded class dependence):
 
-```
+```java
 public class TabletopGameEngine {
   private RNG rng = new SlowRNGAlgorithm();
 
@@ -30,7 +30,7 @@ This is bad, because TabletopGameEngine's code must be changed whenever a differ
 
 Better (constructor parameter):
 
-```
+```java
 public class TabletopGameEngine {
   private RNG rng;
 
@@ -46,7 +46,7 @@ Now, anything that uses TabletopGameEngine should pass an implementation into th
 
 Even Better (bean convention):
 
-```
+```java
 public class TabletopGameEngine {
   private RNG rng;
 
@@ -62,7 +62,7 @@ A game engine can be instantiated, and later configured with a particular algori
 
 Better Still (dependency injection)
 
-```
+```java
 import javax.inject.Inject;
 
 public class TabletopGameEngine {
@@ -84,5 +84,8 @@ This allows a dependency injection container, such as Spring, to entirely manage
 
 * [Sonar](http://www.sonarqube.org/)
 * [Infer](http://fbinfer.com/)
-* [editorconfig-cli](https://github.com/amyboyd/editorconfig-cli) (e.g. `go get github.com/amyboyd/editorconfig-cli`)
-* [flcl](https://github.com/mcandre/flcl) (e.g. `go get github.com/mcandre/flcl/...`)
+* [Python](https://www.python.org/) 3+
+* [GHC Haskell](https://www.haskell.org/) 8+
+* [Go](https://golang.org/) 1.9+
+* [GNU make](https://www.gnu.org/software/make/)
+* [checkbashisms](https://sourceforge.net/projects/checkbaskisms/)
